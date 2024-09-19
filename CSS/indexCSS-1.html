@@ -6,6 +6,9 @@
     <title>Document</title>
 
 <style>
+
+
+    /*  ELEMENT SELECTOR  */
     /* p{
         color: red;
         font-size: larger;
@@ -16,6 +19,7 @@
     } */
 
 
+     /*  BLUE GREEN  */
     /* .green{
         color: green;
     }
@@ -24,6 +28,7 @@
     } */
 
 
+    /*  CLASS SELECTOR  */
     /* .small{
         font-size: smaller;
     }
@@ -31,6 +36,8 @@
         font-size: larger;
     } */
 
+
+    /* ID SELECTOR  */
 /* 
     #first-button{
         color: red;
@@ -40,17 +47,35 @@
     } */
 
 
+    /*  PSEUDO-CLASSES SELECTOR   */
+/*
     button:hover{
         color: yellow;
     }
-    /* a:hover{
+    a:hover{
         color: red;
-    } */
+    } 
     .linkcolor:hover{
         color:chartreuse;
     }
     #link-id:hover{
         color: crimson;
+    } 
+       */
+
+
+    /* SPECIFICITY  */
+
+    P{
+        color: blue  !important;
+    }
+
+    .para-sf{
+        color: orange;
+    }
+
+    #black-para{
+        color: green;
     }
 
 
@@ -59,18 +84,20 @@
 </head>
 <body>
     
+    <!--  ELEMENT SELECTOR -->
 <!-- <p> This is my first paragraph </p>
 <h1> This is my first heading </h1>
 <h1> This is my second heading </h1>
 <p> This is second </p> -->
 
 
-<!-- 
-<p class="green"> abcd </p>
+<!--    BLUE GREEN   -->
+<!-- <p class="green"> abcd </p>
 <P class="green"> pqrs </P>
 <p class="blue"> xyz </p> -->
 
 
+<!--   CLASS SELECTOR   -->
 <!-- <h1 class="small"> heading 1 </h1>
 <h2 class="small"> heading 2 </h2>
 <h3 class="small"> heading 3 </h3>
@@ -78,14 +105,15 @@
 <h5 class="big"> heading 5 </h5>
 <h6 class="big"> heading 6 </h6> -->
 
-<!-- 
-<button id="first-button"> Submit </button>
-<p id="intro-para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, blanditiis? </p> -->
 
-
-<button id="first-button"> Submit </button>
+<!--  ID SELECTOR        ANDDDDD         PSEUDO-CLASSES SELECTOR -->
+<!--  <button id="first-button"> Submit </button>
 <br>
-<a class="linkcolor" id="link-id" href="https://www.thecodehelp.in"> buy DSA Supreme </a>
+<a  class="linkcolor"   id="link-id"   href="https://thecodehelp.in"> Buy DSA Supreme </a>
+<p id="intro-para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, blanditiis? </p>   -->
+
+<!-- SPECIFICITY -->
+<p class=" para-sf "  id=" black-para "  style="color: aqua;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit deleniti corporis consectetur facilis unde, iure blanditiis eligendi vero sed officia quos quam voluptate iusto nobis sunt porro molestias neque. </p>
 
 
 
